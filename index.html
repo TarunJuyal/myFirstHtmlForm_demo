@@ -65,7 +65,7 @@
       <label for="bday">D.O.B *:</label>
       <input type="date" name="bday" id="bday" required />
       <p>Enter Educational Qualifications*:</p>
-      <table>
+      <table name="mytable">
         <tr>
           <th>Class</th>
           <th>Board</th>
@@ -75,17 +75,21 @@
         </tr>
         <tr>
           <td>10th</td>
-          <td><input type="text" required /></td>
-          <td><input type="text" required /></td>
-          <td><input type="text" required /></td>
-          <td><input type="number" min="0" max="100" required /></td>
+          <td><input type="text" name="class10" required /></td>
+          <td><input type="text" name="board10" required /></td>
+          <td><input type="text" name="institute10" required /></td>
+          <td>
+            <input type="number" name="marks10" min="0" max="100" required />
+          </td>
         </tr>
         <tr>
           <td>12th</td>
-          <td><input type="text" required /></td>
-          <td><input type="text" required /></td>
-          <td><input type="text" required /></td>
-          <td><input type="number" min="0" max="100" required /></td>
+          <td><input type="text" name="class12" required /></td>
+          <td><input type="text" name="board12" required /></td>
+          <td><input type="text" name="institute12" required /></td>
+          <td>
+            <input type="number" name="marks12" min="0" max="100" required />
+          </td>
         </tr>
       </table>
       <label for="pwd">Person with disability? *:</label>
